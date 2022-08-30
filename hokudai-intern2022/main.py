@@ -11,6 +11,7 @@ with open("clean.txt", mode="r",encoding="UTF-8") as source:
         if len(l) != 0:
             senlis.append(l)
 print("appended")
+backlis=[]
 idx=0
 check=0
 tmp=""
@@ -23,14 +24,15 @@ for sen in senlis:
         if "人" in mrph.imis and not "人工物" in mrph.imis and flag == 0 or mrph.midasi=="人名" and flag == 0:
             FILE_NAME="./newanalyse/"+mrph.midasi+".txt"
             with open(FILE_NAME, mode="a") as f:
-                print("ファイル書き込み",idx,check,sen)
+                print("ファイル書き込み",idx,check,sen,mrph.midasi)
                
                 if idx == 0 and check == idx:
                     f.write("START\t")
                 elif idx > 0 and check != idx:
                     f.write(senlis[idx-1]+"\t") 
                 elif idx > 0 and check == idx:
-                    f.write
+                    backlis.append(tmp)
+                    f.write(tmp+"\t")
                 f.write(mrph.midasi)
                 tmp=mrph.midasi
             flag=1
@@ -53,8 +55,10 @@ for sen in senlis:
         elif flag == 1:
             with open(FILE_NAME, mode="a") as f:
                 f.write(mrph.midasi) 
+            tmp+=mrph.midasi
     idx+=1
         
+print(backlis)
         
    
     
