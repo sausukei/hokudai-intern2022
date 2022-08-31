@@ -1,0 +1,39 @@
+NEUTRAL defaultdict(<class 'list'>, {'takaburi': ['感心']})	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'iya': ['いや', 'たわけ']})	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'iya': ['いや']})	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['うれしい']})	感情表現なし	
+POSITIVE defaultdict(<class 'list'>, {'yasu': ['安心']})	NEGATIVE defaultdict(<class 'list'>, {'aware': ['痛み'], 'iya': ['痛み']})	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'aware': ['痛み'], 'iya': ['嘲笑', '痛み']})	NEGATIVE defaultdict(<class 'list'>, {'aware': ['泣き', '絶望'], 'iya': ['絶望']})	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'aware': ['痛み'], 'iya': ['痛み']})	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['満足']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'iya': ['いやいや', 'たわけ'], 'kowa': ['心配']})	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'aware': ['失望'], 'iya': ['失望']})	NEGATIVE defaultdict(<class 'list'>, {'kowa': ['小さいなる']})	NEGATIVE defaultdict(<class 'list'>, {'iya': ['ため息']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'iya': ['いばる', '貧弱']})	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+NEUTRAL defaultdict(<class 'list'>, {'takaburi': ['興奮']})	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	NEUTRAL defaultdict(<class 'list'>, {'iya': ['複雑'], 'yasu': ['安楽']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'iya': ['つまらない']})	感情表現なし	感情表現なし	
+POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['無意味*CVS'], 'suki': ['無意味*CVS']})	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	NEUTRAL defaultdict(<class 'list'>, {'odoroki': ['びっくり']})	
+感情表現なし	

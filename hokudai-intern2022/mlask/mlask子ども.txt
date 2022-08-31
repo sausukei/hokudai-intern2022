@@ -1,0 +1,27 @@
+POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['笑う']})	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	NEUTRAL defaultdict(<class 'list'>, {'odoroki': ['びっくり']})	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	NEUTRAL defaultdict(<class 'list'>, {'takaburi': ['感心']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	NEUTRAL defaultdict(<class 'list'>, {'odoroki': ['びっくり']})	
+感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['明るい']})	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'iya': ['いやいや', 'たわけ'], 'kowa': ['心配']})	NEGATIVE defaultdict(<class 'list'>, {'aware': ['失望'], 'iya': ['失望']})	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'iya': ['たわけ']})	
+感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'iya': ['たわけ']})	NEGATIVE defaultdict(<class 'list'>, {'iya': ['敵対']})	
+感情表現なし	感情表現なし	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'iya': ['だれる']})	感情表現なし	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'iya': ['だれる']})	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['うれしい']})	感情表現なし	NEUTRAL defaultdict(<class 'list'>, {'takaburi': ['上気']})	
+感情表現なし	

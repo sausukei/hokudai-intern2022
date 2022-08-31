@@ -1,0 +1,27 @@
+POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['喜び']})	
+POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['壮快']})	感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['壮快']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['喜び', '大喜び']})	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	NEUTRAL defaultdict(<class 'list'>, {'iya': ['いや'], 'yorokobi': ['にこにこ', '笑う']})	NEUTRAL defaultdict(<class 'list'>, {'iya': ['いや'], 'yorokobi': ['にこにこ', '笑う']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'kowa': ['心配']})	
+感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'kowa': ['心配']})	感情表現なし	
+感情表現なし	感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'iya': ['いや']})	
+NEGATIVE defaultdict(<class 'list'>, {'kowa': ['不安']})	感情表現なし	感情表現なし	
+感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'iya': ['あきれる']})	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['笑う']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	mostly_NEGATIVE defaultdict(<class 'list'>, {'kowa': ['青ざめる'], 'takaburi': ['青ざめる']})	
+NEGATIVE defaultdict(<class 'list'>, {'kowa': ['歯をくいしばる']})	感情表現なし	感情表現なし	
+感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['笑う']})	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['笑う']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['たわけ*CVS'], 'suki': ['たわけ*CVS']})	感情表現なし	
+NEGATIVE defaultdict(<class 'list'>, {'kowa': ['心配']})	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['たわけ*CVS'], 'suki': ['たわけ*CVS']})	感情表現なし	
+POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['にこにこ', '笑い', '笑う']})	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['笑う']})	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['にこにこ', '笑い', '笑う']})	
+POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['笑う']})	感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['笑う']})	
+感情表現なし	感情表現なし	感情表現なし	
+感情表現なし	感情表現なし	NEGATIVE defaultdict(<class 'list'>, {'iya': ['たわけ']})	
+感情表現なし	POSITIVE defaultdict(<class 'list'>, {'yorokobi': ['喜び']})	
