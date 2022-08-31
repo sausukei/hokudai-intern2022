@@ -109,7 +109,7 @@ for a in mlaidx:
             #print(a)
             print(fileidx[a])
             print(mainlis[a],mainname[a])
-            FILE_NAME="compare/positive"+mainname[a]
+            FILE_NAME="compare/"+mainname[a]
             with open(FILE_NAME,'a') as  f:
                 f.write("ポジティブでマッチ\n")
                 f.write("nliの{:s}の割合は{:.2f}%で、その前後での割合は、\n前:{:s} {:.2f}%\n後:{:s} {:2f}%\nでした\n"
@@ -119,6 +119,7 @@ for a in mlaidx:
                 f.write(mainlis[a]+"\t"+mainname[a]+"\n")
                 f.write("\n前後を含めた対象の文\n")
                 f.write(mainlis[a-1]+"\n"+mainlis[a]+"\n"+mainlis[a+1])
+                f.write("\n###########################################################################################################\n")
     elif mlalis[a].split()[0] == "NEGATIVE" or mlalis[a].split()[0] == "mostly_NEGATIVE":
         mlanega+=1
         if nlilis[a].split(",")[0] == "negative":
@@ -130,7 +131,7 @@ for a in mlaidx:
             #print(a)
             print(fileidx[a])
             print(mainlis[a],mainname[a])
-            FILE_NAME="compare/negative"+mainname[a]
+            FILE_NAME="compare/"+mainname[a]
             with open(FILE_NAME,'a') as  f:
                 f.write("ネガティブでマッチ\n")
                 f.write("nliの{:s}の割合は{:.2f}%で、その前後での割合は、\n前:{:s} {:.2f}%\n後:{:s} {:2f}%\nでした\n"
@@ -140,8 +141,7 @@ for a in mlaidx:
                 f.write(mainlis[a]+"\t"+mainname[a]+"\n")
                 f.write("\n前後を含めた対象の文\n")
                 f.write(mainlis[a-1]+"\n"+mainlis[a]+"\n"+mainlis[a+1]+"\n")
-                
-                
+                f.write("\n###########################################################################################################\n")
     elif mlalis[a].split()[0] == "NEUTRAL":
         mlaneu+=1
         if nlilis[a].split(",")[0] == "neutral":
@@ -152,7 +152,7 @@ for a in mlaidx:
             #print(a)
             print(fileidx[a])
             print(mainlis[a],mainname[a])
-            FILE_NAME="compare/neutral"+mainname[a]
+            FILE_NAME="compare/"+mainname[a]
             with open(FILE_NAME,'a') as  f:
                 f.write("ニュートラルでマッチ\n")
                 f.write("nliの{:s}の割合は{:.2f}%で、その前後での割合は、\n前:{:s} {:.2f}%\n後:{:s} {:2f}%\nでした\n"
@@ -162,11 +162,22 @@ for a in mlaidx:
                 f.write(mainlis[a]+"\t"+mainname[a]+"\n")
                 f.write("\n前後を含めた対象の文\n")
                 f.write(mainlis[a-1]+"\n"+mainlis[a]+"\n"+mainlis[a+1]+"\n")
+                f.write("\n###########################################################################################################\n")
     muchIndex+=1
     
 print("mlaskで感情表現があるのは"+str(i))
 print("マッチした回数{:d}".format(muched))
-
+print("マッチ率は\n")
+posirate=muchedPosi/mlaposi*100
+negarate=muchedNega/mlanega*100
+neurate=muchedNt/mlaneu*100
+rate=muched/i*100
+print("ポジティブ{:.2f}%\nネガティブ{:.2f}%\nニュートラル{:.2f}%\n総計{:.2f}%\nでした")
+with open("result.txt","a") as f:
+    f.write("mlaskで感情表現があるのは"+str(i)+"個")
+    f.write("マッチした回数{:d}".format(muched))
+    f.write("マッチ率は\n")
+    f.write("ポジティブ{:.2f}%\nネガティブ{:.2f}%\nニュートラル{:.2f}%\n総計{:.2f}%\nでした".format(posirate,negarate,neurate,rate))
 print(positive,negative,neutral)
 print(mlaposi,mlanega,mlaneu)
 print(muchedPosi,muchedNega,muchedNt)
