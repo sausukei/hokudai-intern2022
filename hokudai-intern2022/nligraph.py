@@ -5,14 +5,50 @@ import glob
 import os 
 import re
 
-posi_data=[]
-nega_data=[]
-neu_data=[]
-
+data=[]
+value=[]
+condition=[]
+cnt=[]
+count=0
 plt.ylim(-1,1)
-for filename in glob.glob('nli/nli*.txt'):
-   print(filename.replace('nli/nli',''))
+for filename in glob.glob('nlimax/max*.txt'):
    with open(os.path.join(os.getcwd(), filename), 'r') as f:
        
-       cut = str(filename.replace('nli/nli',''))
+       cut = str(filename.replace('nlimax/max',''))
+       cut = str(cut.replace(".txt",""))
        print(cut)
+       metadata=f.read()
+       
+       for l in re.split("[\t\n]",metadata):
+            if str(l) != "":
+                data=l.split(",")
+                print(data)
+                condition.append(data[0])
+                if data[0] == "positive":
+                    value.append(float(data[1]))
+                elif data[0] == "negative":
+                    value.append(float(data[1])*-1)
+                elif data[0] == "neutral":
+                    value.append(0)
+                """
+                with open("graph/graph"+cut,"a") as graph:
+                    graph.write(l+"\n")
+                    data=l.split(",")
+                """
+                cnt.append(count)
+                count+=1
+       
+       print(value)
+       print(condition)
+       plt.plot(cnt, value, label="test")
+       plt.legend()
+       plt.savefig("graph/graph"+cut+".png")
+       plt.clf()
+               
+       value=[]
+       condition=[]
+       cnt=[]
+       count=0
+
+     
+       
