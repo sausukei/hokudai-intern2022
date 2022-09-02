@@ -10,6 +10,7 @@ value=[]
 condition=[]
 cnt=[]
 count=0
+tmp=0
 plt.ylim(-1,1)
 for filename in glob.glob('nlimax/max*.txt'):
    with open(os.path.join(os.getcwd(), filename), 'r') as f:
@@ -25,11 +26,13 @@ for filename in glob.glob('nlimax/max*.txt'):
                 print(data)
                 condition.append(data[0])
                 if data[0] == "positive":
-                    value.append(float(data[1]))
+                    value.append(tmp+float(data[1]))
+                    tmp+=float(data[1])
                 elif data[0] == "negative":
-                    value.append(float(data[1])*-1)
+                    value.append(tmp+float(data[1])*-1)
+                    tmp-=float(data[1])*-1
                 elif data[0] == "neutral":
-                    value.append(0)
+                    value.append(tmp)
                 """
                 with open("graph/graph"+cut,"a") as graph:
                     graph.write(l+"\n")
@@ -42,7 +45,7 @@ for filename in glob.glob('nlimax/max*.txt'):
        print(condition)
        plt.plot(cnt, value, label="test")
        plt.legend()
-       plt.savefig("graph/graph"+cut+".png")
+       plt.savefig("graph/graph"+cut+"2.png")
        plt.clf()
                
        value=[]
